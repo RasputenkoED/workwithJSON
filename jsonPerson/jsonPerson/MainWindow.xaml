@@ -1,0 +1,32 @@
+﻿<Window x:Class="jsonPerson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jsonPerson"
+        mc:Ignorable="d"
+        Title="Работа с JSON" Height="500" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button x:Name="btnSer" Content="Пример сериализации" Height="39" Margin="10,10,-230.6,10" Click="BtnSer_Click" />
+            <Button x:Name="btnDser" Content="Пример десериализации" Height="39" Margin="10,10,-230.6,10" Click="BtnDser_Click" />
+            <Label Content="Имя" Margin="10" />
+            <Label Content="Фамилия" Margin="10"/>
+            <Label Content="Возраст" Margin="10"/>
+            <Label Content="День рождения" Margin="10"/>
+            <Button x:Name="btnPr" Content="Лидирующие пробелы" Height="39" Margin="10,10,-230.6,10" Click="BtnPr_Click" />
+            <Button x:Name="btCl" Content="Запретить экранировать строки при сериализации" Height="39" Margin="10,10,-230.6,10" Click="BtCl_Click"/>
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="2" Margin="246,127,-0.4,0.4">
+            <TextBox Name="txtName" HorizontalAlignment="Left" Height="23" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+            <TextBox Name="txtSur" HorizontalAlignment="Left" Height="23" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+            <TextBox Name="txtAge" HorizontalAlignment="Left" Height="23" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+            <TextBox Name="txtDB" HorizontalAlignment="Left" Height="23" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>
