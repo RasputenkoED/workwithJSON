@@ -1,0 +1,15 @@
+{
+  "first_name": "John",
+  "last_name": "Smith",
+  "location": "London",
+  "websites": [
+    {
+      "description": "work",
+      "URL": "https://www.johnsmithsite.com/"
+    },
+    {
+      "desciption": "tutorials",
+      "URL": "https://www.johnsmithsite.com/tutorials"
+    }
+  ]
+}
